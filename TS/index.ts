@@ -1,7 +1,11 @@
+import {Auth} from './auth';
+import * as routing from './routing';
 
-import * as auth from './auth';
 
+Array.from(document.getElementById('router-outlet')!.children).forEach(child=>(child as HTMLElement).style.display='none');
+let pages = new routing.Pages('USER');
+let auth = new Auth(pages);
 
-auth.onInit()
+console.log("pages that can be seen ", pages.pagesThatCanBeSeen)
 
 

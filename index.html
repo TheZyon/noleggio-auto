@@ -21,7 +21,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="nav-ul">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
@@ -32,44 +32,51 @@
               <a class="nav-link">chiSiamo</a>
             </li>
           </ul>
-            <button id="registerBtn" class="btn btn-outline-success" type="submit">register</button>
-            <button id="loginBtn" class="btn btn-outline-success" type="submit">login</button>
-            <button id="logoutBtn" class="btn btn-outline-success" type="submit">logout</button>   
+            <button id="nav-registrazione" class="btn btn-outline-success" type="submit">register</button>
+            <button id="nav-login" class="btn btn-outline-success" type="submit">login</button>
+            <button id="nav-logout" class="btn btn-outline-success" type="submit">logout</button>   
         </div>
       </div>
     </nav>
 
-    <div id="home">
-      <p>home works</p>
+    <div id="router-outlet">
+      <div id="home">
+        <p>home works</p>
+      </div>
+  
+      <div id="chiSiamo">
+          <p>chiSiamo works</p>
+      </div>
+  
+      <div id="registrazione">
+        <p>registrazione works</p>
+      </div>
+  
+      <div id="login">
+        <p>login works</p>
+      </div>
+  
+      <div id="catalogoAuto">
+        <p>catalogoAuto works</p>
+      </div>
+  
+      <div id="prenotazione">
+        <p>prenotazione auto works</p>
+      </div>
+   
+      <div id="profilo">
+        <p>profilo cliente works</p>
+      </div>
+  
+      <div id="pannelloStaff">
+        <p>pannello staff works</p>
+      </div>
+  
+      <div id="pannelloAdmin">
+        <p>pannello Admin works</p>
+      </div>
     </div>
-
-    <div id="chiSiamo">
-        <p>chiSiamo works</p>
-    </div>
-
-    <div id="registrazione">
-      <p>registrazione/login works</p>
-    </div>
-
-    <div id="catalogoAuto">
-      <p>catalogoAuto works</p>
-    </div>
-
-    <div id="prenotazione">
-      <p>prenotazione auto works</p>
-    </div>
- 
-    <div id="profiloCliente">
-      <p>profilo cliente works</p>
-    </div>
-
-    <div id="pannelloStaff">
-      <p>pannello staff works</p>
-    </div>
-
-    <div id="pannelloAdmin">
-      <p>pannello Admin works</p>
-    </div>
+    
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
