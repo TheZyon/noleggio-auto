@@ -49,11 +49,55 @@
       </div>
   
       <div id="registrazione">
-        <p>registrazione works</p> <!-- TODO: creare pagina-->
+         <!-- TODO: creare pagina-->
+         <form>
+          <div class="mb-3">
+            <label for="input-group-text" class="form-label">Nome</label>
+            <input type="text" class="form-text" id="input-group-text">
+          </div>
+          <div class="mb-3">
+            <label for="input-group-text" class="form-label">Cognome</label>
+            <input type="text" class="form-text" id="input-group-text">
+          </div>
+          <div class="mb-3">
+            <label for="input-group-text" class="form-label">Luogo di Residenza</label>
+            <input type="text" class="form-text" id="input-group-text">
+          </div>
+          <form id="birthdayForm">
+            <label for="birthday">Data di nascita:</label>
+            <input type="date" id="birthday" name="birthday">
+          </form>
+
+          <label for="works">Occupazione:</label>
+          <select id="works" name="works">
+          <option value="Impiegato">Impiegato</option>
+          <option value="Operaio">Operaio</option>
+          <option value="Imprenditore">Imprenditore</option>
+          <option value="Insegnante">Insegnante</option>
+          </select>
+          <br>
+          <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+
+          <button type="submit" class="btn btn-primary">Registrati</button>
+        </form>
       </div>
-  
-      <div id="login">
-        <p>login works</p> <!-- TODO: creare pagina-->
+      <form>
+      <!-- TODO: creare pagina-->
+      <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+
       </div>
   
       <div id="catalogoAuto">
