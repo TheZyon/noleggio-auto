@@ -14,9 +14,12 @@ export const profilo = document.getElementById('profilo');
 // staff pages
 // admin pages
 export class Pages {
-    constructor(userRole) {
+    constructor() {
         this.pagesThatCanBeSeen = [home, chiSiamo, catalogoAuto, login, registrazione]; // pages that the user can see
         this.userRoles = [ROLES.USER]; // array of roles of current user
+        this.setPagesPerRole('USER');
+    }
+    setPagesPerRole(userRole) {
         this.setUserRoles(userRole);
         this.addPages();
         this.setNavbarOptions();
@@ -29,10 +32,10 @@ export class Pages {
                 this.userRoles = [...this.userRoles, ROLES.CUSTOMER];
                 break;
             case 'STAFF':
-                this.userRoles = [...this.userRoles, ROLES.CUSTOMER, ROLES.STAFF];
+                this.userRoles = [...this.userRoles, ROLES.STAFF];
                 break;
             case 'ADMIN':
-                this.userRoles = [...this.userRoles, ROLES.CUSTOMER, ROLES.STAFF, ROLES.ADMIN];
+                this.userRoles = [...this.userRoles, ROLES.STAFF, ROLES.ADMIN];
                 break;
             default: console.error('this user role is not permitted: ', userRole);
         }

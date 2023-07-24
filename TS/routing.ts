@@ -23,32 +23,30 @@ export const profilo : HTMLElement = document.getElementById('profilo')!;
 // admin pages
 
 
-
-
-
-
 export class Pages{
     pagesThatCanBeSeen =[home, chiSiamo, catalogoAuto, login, registrazione]; // pages that the user can see
     userRoles: ROLES[]=[ROLES.USER]; // array of roles of current user
 
-    constructor(userRole: 'USER' | 'CUSTOMER' | 'STAFF' | 'ADMIN'){
+    constructor(){
+            this.setPagesPerRole('USER');
+    }
+
+    setPagesPerRole(userRole: 'USER' | 'CUSTOMER' | 'STAFF' | 'ADMIN'){
         this.setUserRoles(userRole);
         this.addPages();
         this.setNavbarOptions();
         this.show(this.pagesThatCanBeSeen[0]);
-
     }
 
     private setUserRoles(userRole:string){
         switch(userRole){
             case 'USER': break;
             case 'CUSTOMER': this.userRoles=[...this.userRoles, ROLES.CUSTOMER];  break;
-            case 'STAFF':   this.userRoles=[...this.userRoles, ROLES.CUSTOMER, ROLES.STAFF]; break;
-            case 'ADMIN':     this.userRoles=[...this.userRoles, ROLES.CUSTOMER, ROLES.STAFF, ROLES.ADMIN]; break;
+            case 'STAFF':   this.userRoles=[...this.userRoles, ROLES.STAFF]; break;
+            case 'ADMIN':     this.userRoles=[...this.userRoles, ROLES.STAFF, ROLES.ADMIN]; break;
             default : console.error('this user role is not permitted: ', userRole);
         }
     }
-
 
     /**
      * add pages to pagesThatCanBeSeen based on the user roles
@@ -74,8 +72,7 @@ export class Pages{
                 <a class="nav-link active" aria-current="page" href="#" id='nav-${page.id}'>${page.id}</a>
               </li>
                 `    
-            }
-            
+            }    
         })
 
         this.pagesThatCanBeSeen.forEach(page=>{
@@ -102,7 +99,5 @@ export class Pages{
             })
         }
     }
-
-
 }
 
