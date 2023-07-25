@@ -19,8 +19,14 @@ export const profilo : HTMLElement = document.getElementById('profilo')!;
 
 
 // staff pages
+export const gestioneAuto : HTMLElement = document.getElementById('gestioneAuto')!;
+export const elencoMensile : HTMLElement = document.getElementById('elencoMensile')!;
 
 // admin pages
+export const gestioneStaff : HTMLElement = document.getElementById('gestioneStaff')!;
+export const gestioneClienti : HTMLElement = document.getElementById('gestioneClienti')!;
+export const gestioneFaq : HTMLElement = document.getElementById('gestioneFaq')!;
+export const reportAnnuale : HTMLElement = document.getElementById('reportAnnuale')!;
 
 
 export class Pages{
@@ -53,6 +59,8 @@ export class Pages{
      */
     private  addPages(){
         if(this.userRoles.includes(ROLES.CUSTOMER)) this.pagesThatCanBeSeen = [...this.pagesThatCanBeSeen, prenotazione, profilo];
+        if(this.userRoles.includes(ROLES.STAFF)) this.pagesThatCanBeSeen = [...this.pagesThatCanBeSeen, gestioneAuto, elencoMensile];
+        if(this.userRoles.includes(ROLES.ADMIN)) this.pagesThatCanBeSeen = [...this.pagesThatCanBeSeen, gestioneStaff, gestioneClienti, gestioneFaq, reportAnnuale];
         
         //TODO: aggiungere la logica analoga per gli altri ruoli !!
 
