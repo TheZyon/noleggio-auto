@@ -41,19 +41,164 @@
 
     <div id="router-outlet">
       <div id="home">
-        <p>home works</p> <!-- TODO: creare pagina-->
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <h1>Vagnoli - Noleggio Auto</h1>
+        </nav>
+    </header>
+
+    <!-- City Image -->
+    <section id="city-image">
+        <img src="fano.jpg" alt="Fano, Italy">
+    </section>
+
+    <!-- Vagnoli Info Box -->
+    <section id="vagnoli-info">
+        <div class="info-box">
+            <h2>Vagnoli - Noleggio Auto</h2>
+            <p>
+                Benvenuti da Vagnoli - il miglior servizio di autonoleggio a Fano, Italia.
+                Offriamo una vasta selezione di auto moderne e sicure per soddisfare tutte le vostre esigenze di viaggio.
+                Il nostro team di professionisti è pronto ad assistervi e a rendere la vostra esperienza di noleggio
+                piacevole e senza stress. Affidatevi a noi per esplorare Fano e i suoi dintorni con comfort e stile!
+            </p>
+            <p>Contattaci per informazioni e prenotazioni:</p>
+            <p>Telefono: 123-456-789</p>
+            <p>Email: info@vagnoli.com</p>
+        </div>
+        <img src="geo.jpg" alt="Location on Maps" class="maps-image">
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <div class="faq-column">
+            <h2>Domande Frequenti</h2>
+            <h3>Come posso prenotare un'auto?</h3>
+            <p>Prenotare un'auto con Vagnoli è semplice. Puoi farlo online tramite il nostro sito web o chiamando il
+                nostro
+                servizio clienti al numero fornito sopra.</p>
+
+            <h3>Quali documenti devo presentare al momento del ritiro dell'auto?</h3>
+            <p>Al momento del ritiro dell'auto, dovrai presentare una carta di credito valida, la tua patente di guida
+                e un
+                documento d'identità.</p>
+            <h3>Posso prenotare un veicolo se ho meno di 25 anni?</h3>
+            <p>Certo, sopra i 14 anni puoi prenotare qualsiasi veicolo tu voglia</p>
+
+        </div>
+    </section>
+
+    <!-- Social and Contacts Section -->
+    <section id="social-contacts">
+        <div class="social-box">
+            <h2>Seguici sui Social</h2>
+            <!-- Add social media icons and links here -->
+            <ul>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+        <div class="contact-box">
+            <h2>Contatti</h2>
+            <p>Telefono: 123-456-789</p>
+            <p>Email: info@vagnoli.com</p>
+            <p>Indirizzo: Via Autostrada, 123, 61032 Fano PU, Italia</p>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2023 Vagnoli - Noleggio Auto</p>
+    </footer>
+
+</body>
+
+</html>
+
       </div>
   
       <div id="chiSiamo">
-          <p>chiSiamo works</p> <!-- TODO: creare pagina-->
+          <!-- TODO: creare pagina-->
+
+          <header>
+            <h1>Benvenuti al Noleggio Auto Vagnoli</h1>
+          </header>
+        
+          <main>
+            <h2>Chi Siamo</h2>
+            <p>Il Noleggio Auto Vagnoli è un'azienda leader nel settore dei noleggi auto. Siamo orgogliosi di offrire una vasta gamma di veicoli per incontrare le esigenze dei nostri clienti.</p>
+        
+            <h3>La nostra missione</h3>
+            <p>La nostra missione è fornire un servizio di noleggio auto conveniente e di alta qualità, garantendo la massima soddisfazione dei clienti. Ci impegniamo a offrire auto sicure e affidabili per garantire viaggi confortevoli e senza problemi.</p>
+        
+            <h3>Il nostro team</h3>
+            <p>Il Noleggio Auto Vagnoli è composto da un team di professionisti esperti e appassionati, sempre pronti ad aiutarti a trovare la soluzione di noleggio più adatta alle tue esigenze. Siamo qui per rendere il tuo viaggio un'esperienza memorabile.</p>
+        
+            <h3>Contattaci</h3>
+            <p>Se hai domande riguardo ai nostri servizi di noleggio auto o desideri prenotare un veicolo, non esitare a contattarci. Siamo disponibili 24/7 per assisterti.</p>
+        
+            <p><strong>Email:</strong> info@noleggiovagnoli.it</p>
+            <p><strong>Telefono:</strong> +39 123 456 7890</p>
+          </main>
+        
+          <footer>
+            <p>Tutti i diritti riservati &copy; 2023 Noleggio Auto Vagnoli</p>
+          </footer>
+        </body>
       </div>
   
       <div id="registrazione">
-        <p>registrazione works</p> <!-- TODO: creare pagina-->
+         <!-- TODO: creare pagina-->
+         <form>
+          <div class="mb-3">
+            <label for="input-group-text" class="form-label">Nome</label>
+            <input type="text" class="form-text" id="input-group-text">
+          </div>
+          <div class="mb-3">
+            <label for="input-group-text" class="form-label">Cognome</label>
+            <input type="text" class="form-text" id="input-group-text">
+          </div>
+          <div class="mb-3">
+            <label for="input-group-text" class="form-label">Luogo di Residenza</label>
+            <input type="text" class="form-text" id="input-group-text">
+          </div>
+          <form id="birthdayForm">
+            <label for="birthday">Data di nascita:</label>
+            <input type="date" id="birthday" name="birthday">
+          </form>
+
+          <label for="works">Occupazione:</label>
+          <select id="works" name="works">
+          <option value="Impiegato">Impiegato</option>
+          <option value="Operaio">Operaio</option>
+          <option value="Imprenditore">Imprenditore</option>
+          <option value="Insegnante">Insegnante</option>
+          </select>
+          <br>
+          <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+
+          <button type="submit" class="btn btn-primary">Registrati</button>
+        </form>
       </div>
-  
-      <div id="login">
-        <p>login works</p> <!-- TODO: creare pagina-->
+      <form>
+      <!-- TODO: creare pagina-->
+      <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+
+          <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+
       </div>
   
       <div id="catalogoAuto">
