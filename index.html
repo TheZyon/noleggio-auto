@@ -50,7 +50,7 @@
 
     <!-- City Image -->
     <section id="city-image">
-        <img src="fano.jpg" alt="Fano, Italy">
+        <img src="dist/fano.jpg" alt="Fano, Italy">
     </section>
 
     <!-- Vagnoli Info Box -->
@@ -67,25 +67,57 @@
             <p>Telefono: 123-456-789</p>
             <p>Email: info@vagnoli.com</p>
         </div>
-        <img src="geo.jpg" alt="Location on Maps" class="maps-image">
+        <img src="dist/geo.jpg" alt="Location on Maps" class="maps-image">
     </section>
 
     <!-- FAQ Section -->
     <section id="faq">
         <div class="faq-column">
             <h2>Domande Frequenti</h2>
-            <h3>Come posso prenotare un'auto?</h3>
-            <p>Prenotare un'auto con Vagnoli è semplice. Puoi farlo online tramite il nostro sito web o chiamando il
-                nostro
-                servizio clienti al numero fornito sopra.</p>
-
-            <h3>Quali documenti devo presentare al momento del ritiro dell'auto?</h3>
-            <p>Al momento del ritiro dell'auto, dovrai presentare una carta di credito valida, la tua patente di guida
-                e un
-                documento d'identità.</p>
-            <h3>Posso prenotare un veicolo se ho meno di 25 anni?</h3>
-            <p>Certo, sopra i 14 anni puoi prenotare qualsiasi veicolo tu voglia</p>
-
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Come posso prenotare un'auto?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    Prenotare un'auto con Vagnoli è semplice. Puoi farlo online tramite il nostro sito web o chiamando il nostro servizio clienti al numero fornito su questa pagina.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Quali documenti devo presentare al momento del ritiro dell'auto?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div class="card-body">
+                    Al momento del ritiro dell'auto, dovrai presentare una carta di credito valida, la tua patente di guida e un documento d'identità.
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Posso prenotare un veicolo se ho meno di 25 anni?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body">
+                    Certo, sopra i 14 anni puoi prenotare qualsiasi veicolo tu voglia.
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
     </section>
 
